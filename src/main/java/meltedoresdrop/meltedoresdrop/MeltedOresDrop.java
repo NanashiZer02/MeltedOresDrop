@@ -9,9 +9,9 @@ public final class MeltedOresDrop extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        Metrics metrics = new Metrics(this, 15492);
         // Plugin startup logic
         Bukkit.getLogger().info("[MOD] MeltedOresDrop Enabled");
-        getConfig().options().copyDefaults();
         saveDefaultConfig();
         new OreBreak(this);
         new BlockBreak(this);
