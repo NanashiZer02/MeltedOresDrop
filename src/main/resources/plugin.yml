@@ -1,0 +1,5 @@
+name: MeltedOresDrop
+version: '${project.version}'
+main: meltedoresdrop.meltedoresdrop.MeltedOresDrop
+api-version: 1.18
+prefix: MOD

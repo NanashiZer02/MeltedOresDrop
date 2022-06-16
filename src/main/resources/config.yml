@@ -1,0 +1,16 @@
+Ores:
+  Iron: true
+  Gold: true
+  Copper: true
+  Debris: true
+
+Blocks:
+  Cobblestone: true
+  Stone: true
+  Netherrack: true
+
+Woods:
+  Acacia: true
+  Oak: true
+  Spruce: true
+  Jungle: true
