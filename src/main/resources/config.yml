@@ -8,9 +8,13 @@ Blocks:
   Cobblestone: true
   Stone: true
   Netherrack: true
+  Sand: true
+  Sandstone: true
+  Red-sandstone: true
+  Block-of-quartz: true
 
-Woods:
-  Acacia: true
-  Oak: true
-  Spruce: true
-  Jungle: true
+# //You can use any minecraft items as a breaking tool
+# //Use this site to get the ID https://minecraftitemids.com
+# //Remove minecraft: and make it all Uppercase
+
+Breaking-tool: GOLDEN_PICKAXE
