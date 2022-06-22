@@ -33,27 +33,25 @@ public class OreBreak implements Listener {
         Material material = player.getInventory().getItemInMainHand().getType();
 
 
-
         if(block.getType() == Material.IRON_ORE && material == Material.getMaterial(tool) && player.getGameMode() == GameMode.SURVIVAL && iron){
             event.setDropItems(false);
             event.setExpToDrop(4);
             block.getWorld().dropItemNaturally(block.getLocation(), new ItemStack(Material.IRON_INGOT));
-        }
-        if(block.getType() == Material.COPPER_ORE && material == Material.getMaterial(tool) && player.getGameMode() == GameMode.SURVIVAL && copper){
-            event.setDropItems(false);
-            event.setExpToDrop(3);
-            block.getWorld().dropItemNaturally(block.getLocation(), new ItemStack(Material.COPPER_INGOT));
-        }
-        if(block.getType() == Material.GOLD_ORE && material == Material.getMaterial(tool) && player.getGameMode() == GameMode.SURVIVAL && gold){
+
+        }else if(block.getType() == Material.GOLD_ORE && material == Material.getMaterial(tool) && player.getGameMode() == GameMode.SURVIVAL && gold){
             event.setDropItems(false);
             event.setExpToDrop(4);
             block.getWorld().dropItemNaturally(block.getLocation(), new ItemStack(Material.GOLD_INGOT));
-        }
 
-        if(block.getType() == Material.ANCIENT_DEBRIS && material == Material.getMaterial(tool) && player.getGameMode() == GameMode.SURVIVAL && debris){
+        }else if(block.getType() == Material.ANCIENT_DEBRIS && material == Material.getMaterial(tool) && player.getGameMode() == GameMode.SURVIVAL && debris){
             event.setDropItems(false);
             event.setExpToDrop(12);
             block.getWorld().dropItemNaturally(block.getLocation(), new ItemStack(Material.NETHERITE_SCRAP));
+
+        }else if (block.getType() == Material.COPPER_ORE && material == Material.getMaterial(tool) && player.getGameMode() == GameMode.SURVIVAL && copper){
+            event.setDropItems(false);
+            event.setExpToDrop(3);
+            block.getWorld().dropItemNaturally(block.getLocation(), new ItemStack(Material.COPPER_INGOT));
         }
     }
 }
